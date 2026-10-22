@@ -28,7 +28,7 @@ cli = ["dep:clap", "dep:clap-verbosity-flag", "dep:tracing-subscriber"]
 
 [dependencies]
 anyhow = { version = "1.0", features = ["backtrace"] }
-boring = "5.0"
+boring = ">=4.16, <6"
 bytes = "1.6.0"
 clap = { version = "4.3", optional = true, features = ["derive"] }
 clap-verbosity-flag = { version = "2.1", optional = true }
@@ -45,7 +45,7 @@ rustls-native-certs = "0.7.0"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = { version = "1.0", features = ["preserve_order"] }
 tokio = { version = "1.43", features = ["rt-multi-thread", "time", "net", "test-util", "macros"] }
-tokio-boring = "5.0"
+tokio-boring = ">=4.16, <6"
 tokio-util = "0.7"
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", optional = true, features = ["env-filter", "fmt"] }
